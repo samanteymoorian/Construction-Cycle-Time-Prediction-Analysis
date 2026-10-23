@@ -1,0 +1,14 @@
+# Confidential datasets
+*.csv
+
+# Python temporary files
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Local environments
+.venv/
+venv/
+
+# System files
+.DS_Store
