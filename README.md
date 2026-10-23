@@ -8,7 +8,7 @@ This project analyzes historical residential construction records, develops regr
 
 ## Key results
 
-- 20.2% lower MAE in 202 and 21.6% lower MAE in 2024 compared with a floor-plan-average baseline, using nested time-based validation.
+- 20.2% lower MAE in 2023 and 21.6% lower MAE in 2024 compared with a floor-plan-average baseline, using nested time-based validation.
 - **Nested Gradient Boosting** achieved 28.26 days MAE (2023) and 29.21 days MAE (2024).
 - The nested procedure independently selected hyperparameters from earlier historical periods for each evaluation year, rather than choosing them using that year's outcomes.
 - Performance was much weaker in the early 2022 evaluation, when only 426 completed projects were available for training. This highlights the importance of training-data availability and period-specific evaluation.
@@ -143,6 +143,6 @@ The notebook also investigates feature importance and differences across site ma
 
 ## Repository and reproducibility
 
--[`construction_cycle_time_prediction.ipynb`](construction_cycle_time_prediction.ipynb) — exploratory analysis, feature engineering, modeling, hyperparameter tuning, historical validation, and interpretation.
+-[`construction_cycle_time_prediction.ipynb`](construction_cycle_time.ipynb) — exploratory analysis, feature engineering, modeling, hyperparameter tuning, historical validation, and interpretation.
 
 The notebook expects the confidential `build_history.csv` to be available **locally** in its working directory. The CSV is intentionally excluded from Git using `.gitignore` and should not be committed or redistributed.
